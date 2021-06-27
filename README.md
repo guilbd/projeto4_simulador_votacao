@@ -1,3 +1,4 @@
+![projeto4_simulador_votacao copy py - Módulo 1 - Visual Studio Code 2021-06-27 07-46-35 00_00_00-00_00_30](https://user-images.githubusercontent.com/57806160/123541865-ebcbf300-d71c-11eb-9cc8-8ca4a3bd70cd.gif)
 # projeto4_simulador_votacao
 PROJETO 4 - SIMULADOR VOTAÇÃO
 
