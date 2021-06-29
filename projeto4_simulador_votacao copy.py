@@ -24,7 +24,8 @@ import os # Biblioteca utilizada para limpar o console
 from time import sleep # Biblioteca utilizada para pausas (efeitos)
 from tqdm import tqdm # Biblioteca utilizada para a barra de progresso
 from rich import print
-
+import pygame # Biblioteca utilizada para executar áudio
+pygame.mixer.init() # Função para iniciar a aplicação que executa o áudio
 
 def linhas(): # Função para linhas decorativas
     print(f'[blue]*'*65)
@@ -81,6 +82,9 @@ def votacao(voto): # Função para votação com o menu dos candidatos e contado
             branco += 1
         elif 1 < voto > 5 :
             print('''OPÇÃO INVÁLIDA''')
+        #pygame.mixer.init()
+        pygame.mixer.music.load("urna_eletronica2.mp3") # carregamento do arquivo mp3
+        pygame.mixer.music.play() # Após votar toca o áudio a vinheta de urna eletrônica    
         continua = input('Continuar votação ? [S/N] ').upper()
         screen_clear()
         if continua == 'N':
@@ -105,6 +109,8 @@ def votacao(voto): # Função para votação com o menu dos candidatos e contado
     elif candidato1 < candidato3 > candidato2:
         return f'O salgadinho eleito foi [yellow]ELMA CHIPS'
 
+       
+#Programa Principal
 screen_clear()
   
 print(f'{"[blue]ELEIÇÕES 2021":^60}')
