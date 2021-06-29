@@ -23,7 +23,7 @@
 import os # Biblioteca utilizada para limpar o console
 from time import sleep # Biblioteca utilizada para pausas (efeitos)
 from tqdm import tqdm # Biblioteca utilizada para a barra de progresso
-from rich import print
+from rich import print #Biblioteca para efeito de cores na saida do terminal
 import pygame # Biblioteca utilizada para executar áudio
 pygame.mixer.init() # Função para iniciar a aplicação que executa o áudio
 
